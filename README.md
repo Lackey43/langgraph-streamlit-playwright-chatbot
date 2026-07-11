@@ -1,0 +1,1 @@
+I need to read the file first to get exact content for push, but since long, use tool to read local then push? Wait, better use bash to cat or something, but since I wrote it, I can re-write or use multiple calls.

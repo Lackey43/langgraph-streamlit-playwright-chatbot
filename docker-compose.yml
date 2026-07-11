@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  chatbot:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data          # Persistent SQLite memory DB
+      - ./.env:/app/.env:ro       # Secrets (never commit real .env)
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    # For production, add resource limits, secrets management, etc.

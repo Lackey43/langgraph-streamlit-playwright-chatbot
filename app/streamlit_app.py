@@ -1,0 +1,1 @@
+I need the full current content after edit. So first read the local file.

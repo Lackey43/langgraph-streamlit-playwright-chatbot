@@ -1,0 +1,1 @@
+"""Memory package (SQLite-backed per-user memory with last-6 trimming)."""
